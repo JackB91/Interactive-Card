@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="bg-vdark">
+    <div class="desktop">
+      <div>
+        <div class="cc-card flow">
+          <div class="back-container">
+            <img class="cc-back" src="images/bg-card-back.png" alt="" />
+          </div>
+          <div class="front-container">
+            <div class="cc-front">
+              <img src="images/card-logo.svg" alt="" />
+              <div class="nums flex text-white">
+                <p class="p1">0000</p>
+                <p class="p2">0000</p>
+                <p class="p3">0000</p>
+                <p class="p4">0000</p>
+              </div>
+              <div class="name-date text-white flex uppercase">
+                <p>Felicia Leire</p>
+                <p>09/26</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="container flow">
+          <div class="flex flex-column">
+            <span>Cardholder Name</span>
+            <input
+              type="text"
+              placeholder="e.g. Jane Appleseed"
+              class="text-vdark"
+            />
+            <span class="error text-red">Please enter details</span>
+          </div>
+          <div class="flex flex-column">
+            <span>Card Number</span>
+            <input
+              type="text"
+              placeholder="e.g. 1234 5678 9123 0000"
+              class="text-vdark"
+            />
+            <span class="error text-red">Wrong format, numbers only</span>
+          </div>
+          <div class="grid grid-layout">
+            <div class="flex flex-column">
+              <span>Exp. Date</span>
+              <input type="text" placeholder="MM" class="text-vdark" />
+              <span class="error text-red">Can't be blank</span>
+            </div>
+            <div class="flex flex-column">
+              <span>(MM/YY)</span>
+              <input type="text" placeholder="YY" class="text-vdark" />
+              <span class="error text-red">Can't be blank</span>
+            </div>
+            <div class="flex flex-column">
+              <span>CVC</span>
+              <input type="text" placeholder="e.g. 123" class="text-vdark" />
+              <span class="error text-red">Can't be blank</span>
+            </div>
+          </div>
+          <div class="commit">
+            <button class="text-white bg-vdark">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
